@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.tony.gearratioapp.AddActivity">
+
+    <TextView
+        android:id="@+id/nameTag"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25px"
+
+        android:text="Name:"
+
+        />
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/nameTag"
+        android:layout_alignParentTop="true"
+        android:hint="@string/edit_message"
+
+
+        />
+    <TextView
+        android:id="@+id/tireTag"
+        android:layout_width="80dp"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameTag"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="50px"
+        android:text="Tire size:"
+
+        />
+    <Spinner
+        android:id="@+id/tireSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameInput"
+        android:layout_toRightOf="@id/tireTag"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="20px"
+
+        >
+
+    </Spinner>
+    <TextView
+        android:id="@+id/cassetteTag"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tireTag"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="50px"
+        android:text="Cassette:"
+
+        />
+    <Spinner
+        android:id="@+id/cassetteInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/cassetteTag"
+        android:layout_below="@+id/tireSpinner"
+        android:layout_marginTop="20px"
+        android:layout_marginRight="25dp"
+
+
+        />
+    <Spinner
+        android:id="@+id/cassetteInput2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/cassetteInput"
+        android:layout_below="@+id/tireSpinner"
+        android:layout_marginTop="20px"
+
+
+
+        />
+    <TextView
+        android:id="@+id/crankTag"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cassetteTag"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="50px"
+        android:text="Crank:"
+
+        />
+    <Spinner
+        android:id="@+id/crankInput1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/crankTag"
+        android:layout_below="@+id/cassetteInput"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="40px"
+
+
+        />
+    <Spinner
+        android:id="@+id/crankInput2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/crankInput1"
+        android:layout_below="@+id/cassetteInput"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="40px"
+
+
+        />
+    <Spinner
+        android:id="@+id/crankInput3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/crankInput2"
+        android:layout_below="@+id/cassetteInput"
+        android:layout_marginTop="40px"
+
+
+        />
+    <Button
+        android:id="@+id/addBikeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/crankTag"
+        android:text="Add Bike"
+        android:onClick="onClickAdd"
+        android:layout_marginTop="50px"
+        />
+
+
+
+</RelativeLayout>
