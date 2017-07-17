@@ -51,6 +51,11 @@ public class AddActivity extends AppCompatActivity {
         ArrayAdapter<CharSequence> adapter6 = ArrayAdapter.createFromResource(this, R.array.crankMax_array, android.R.layout.simple_spinner_item);
         adapter6.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner6.setAdapter(adapter6);
+
+        Spinner spinner7 = (Spinner) findViewById(R.id.bikeTypeSpinner);
+        ArrayAdapter<CharSequence> adapter7 = ArrayAdapter.createFromResource(this, R.array.bikeTypes_array, android.R.layout.simple_spinner_item);
+        adapter7.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner7.setAdapter(adapter7);
     }
     public void onClickAdd(View view){
 
